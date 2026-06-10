@@ -7,72 +7,81 @@ function Help() {
     <div className="dashboard-page">
 
       <div
-  style={{
-    display: "flex",
-    justifyContent: "space-between",
-    marginBottom: "20px"
-  }}
->
-  <div
-    className="back-link"
-    onClick={() => navigate(-1)}
-    style={{ cursor: "pointer" }}
-  >
-    ← Back
-  </div>
-
-  <button
-    className="book-btn"
-    style={{
-    padding: "8px 12px",
-    width: "auto",
-    fontSize: "14px"
-  }}
-    onClick={() => navigate("/farmer-dashboard")}
-  >
-    Dashboard
-  </button>
-</div>
-
-
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          marginBottom: "20px"
+        }}
+      >
+        <button
+          className="book-btn"
+          style={{
+            width: "auto",
+            padding: "8px 12px"
+          }}
+          onClick={() =>
+            navigate("/farmer-dashboard")
+          }
+        >
+          🏠 Dashboard
+        </button>
+      </div>
 
       <div className="dashboard-header">
-        <h1>☎️ సహాయం</h1>
-        <p>Help & Support</p>
+        <h1>☎️ Help & Support</h1>
+        <p>Need Assistance?</p>
       </div>
 
       <div className="driver-card">
 
-        <h3>Customer Support</h3>
-
+        <h3>📞 Customer Support</h3>
         <p>Phone: +91 9876543210</p>
 
-        <p>Email: support@agripoort.com</p>
+        <br />
 
-        <button className="book-btn">
-          Contact Support
-        </button>
+        <h3>✉️ Email Support</h3>
+        <p>support@agripoort.com</p>
 
-      </div>
+        <br />
 
-      <div className="driver-card">
+        <h3>🚛 Booking Issues</h3>
+        <p>
+          Contact support if you are unable
+          to book a vehicle or driver.
+        </p>
 
-        <h3>FAQ</h3>
+        <br />
 
-        <p>How to book a vehicle?</p>
+        <h3>📍 Vehicle Tracking Issues</h3>
+        <p>
+          If location updates are not visible,
+          contact support.
+        </p>
 
-        <p>Select Book Vehicle and fill details.</p>
+        <br />
 
-      </div>
-
-      <div className="driver-card">
+        <h3>🔑 Forgot Password</h3>
 
         <button
           className="book-btn"
-          onClick={() => navigate("/farmer-dashboard")}
+          onClick={() =>
+            navigate("/forgot-password")
+          }
         >
-          Go To Dashboard
+          Reset Password
         </button>
+
+        <br />
+        <br />
+
+        <h3>⏰ Support Hours</h3>
+        <p>
+          Monday - Saturday
+        </p>
+
+        <p>
+          9:00 AM - 6:00 PM
+        </p>
 
       </div>
 

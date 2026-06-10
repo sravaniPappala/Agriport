@@ -21,7 +21,7 @@ function AdminDashboard() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/admin/stats"
+        "https://agriport-bakend.onrender.com/api/admin/stats"
       );
 
       setStats(res.data);

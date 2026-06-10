@@ -21,7 +21,7 @@ function Orders() {
       );
 
       const res = await axios.get(
-        `http://localhost:5000/api/bookings/farmer/${farmer.farmerId}`
+        `https://agriport-bakend.onrender.com/api/bookings/farmer/${farmer.farmerId}`
       );
 
       setBookings(res.data);
@@ -37,7 +37,7 @@ function Orders() {
     try {
 
       await axios.put(
-        `http://localhost:5000/api/bookings/rating/${id}`,
+        `https://agriport-bakend.onrender.com/api/bookings/rating/${id}`,
         {
           rating,
           review
