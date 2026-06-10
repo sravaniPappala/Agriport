@@ -24,7 +24,7 @@ function DriverRegister() {
   const handleRegister = async () => {
     try {
       const res = await axios.post(
-        "https://agriport-bakend.onrender.com/api/auth/driver/register",
+        "https://agriport-backend.onrender.com/api/auth/driver/register",
         formData
       );
 

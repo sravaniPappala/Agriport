@@ -21,7 +21,7 @@ function FarmerLogin() {
     try {
 
       const res = await axios.post(
-        "https://agriport-bakend.onrender.com/api/auth/farmer/login",
+        "https://agriport-backend.onrender.com/api/auth/farmer/login",
         formData
       );
 

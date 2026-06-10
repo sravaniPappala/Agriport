@@ -52,7 +52,7 @@ function ForgotPassword() {
       try {
 
         await axios.put(
-          "https://agriport-bakend.onrender.com/api/auth/reset-password",
+          "https://agriport-backend.onrender.com/api/auth/reset-password",
           {
             role,
             userId,

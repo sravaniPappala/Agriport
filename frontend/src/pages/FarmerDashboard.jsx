@@ -19,7 +19,7 @@ function FarmerDashboard() {
     try {
 
       const res = await axios.get(
-        `https://agriport-bakend.onrender.com/api/bookings/farmer/${farmer.farmerId}`
+        `https://agriport-backend.onrender.com/api/bookings/farmer/${farmer.farmerId}`
       );
 
       setBookings(res.data);

@@ -23,7 +23,7 @@ function FarmerRegister() {
   const handleRegister = async () => {
     try {
       const res = await axios.post(
-        "https://agriport-bakend.onrender.com/api/auth/farmer/register",
+        "https://agriport-backend.onrender.com/api/auth/farmer/register",
         formData
       );
 

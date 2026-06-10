@@ -15,7 +15,7 @@ function TrackVehicle() {
     try {
 
       const res = await axios.get(
-        "https://agriport-bakend.onrender.com/api/bookings"
+        "https://agriport-backend.onrender.com/api/bookings"
       );
 
       if (res.data.length > 0) {

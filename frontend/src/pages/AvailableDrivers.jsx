@@ -15,7 +15,7 @@ function AvailableDrivers() {
     try {
 
       const res = await axios.get(
-        "https://agriport-bakend.onrender.com/api/auth/drivers"
+        "https://agriport-backend.onrender.com/api/auth/drivers"
       );
 
       setDrivers(res.data);
@@ -142,7 +142,7 @@ function AvailableDrivers() {
                       );
 
                     await axios.post(
-                      "https://agriport-bakend.onrender.com/api/bookings/create",
+                      "https://agriport-backend.onrender.com/api/bookings/create",
                       {
                         ...bookingData,
 

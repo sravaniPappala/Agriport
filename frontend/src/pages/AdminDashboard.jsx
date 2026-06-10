@@ -21,7 +21,7 @@ function AdminDashboard() {
     try {
 
       const res = await axios.get(
-        "https://agriport-bakend.onrender.com/api/admin/stats"
+        "https://agriport-backend.onrender.com/api/admin/stats"
       );
 
       setStats(res.data);

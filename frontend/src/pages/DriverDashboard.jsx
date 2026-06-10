@@ -20,7 +20,7 @@ function DriverDashboard() {
     try {
 
       const res = await axios.get(
-        `https://agriport-bakend.onrender.com/api/bookings/driver/${driver.driverId}`
+        `https://agriport-backend.onrender.com/api/bookings/driver/${driver.driverId}`
       );
 
       setBookings(res.data);
@@ -42,7 +42,7 @@ function DriverDashboard() {
     try {
 
       await axios.put(
-        `https://agriport-bakend.onrender.com/api/bookings/accept/${id}`,
+        `https://agriport-backend.onrender.com/api/bookings/accept/${id}`,
         {
           driverId: driver.driverId,
           driverName: driver.fullName
@@ -62,7 +62,7 @@ function DriverDashboard() {
     try {
 
       await axios.put(
-        `https://agriport-bakend.onrender.com/api/bookings/location/${id}`,
+        `https://agriport-backend.onrender.com/api/bookings/location/${id}`,
         {
           currentLocation: location
         }
@@ -83,7 +83,7 @@ function DriverDashboard() {
     try {
 
       await axios.put(
-        `https://agriport-bakend.onrender.com/api/bookings/complete/${id}`
+        `https://agriport-backend.onrender.com/api/bookings/complete/${id}`
       );
 
       fetchBookings();

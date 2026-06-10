@@ -27,7 +27,7 @@ function FarmerProfile() {
     try {
 
       const res = await axios.put(
-        `https://agriport-bakend.onrender.com/api/auth/farmer/update/${farmer._id}`,
+        `https://agriport-backend.onrender.com/api/auth/farmer/update/${farmer._id}`,
         formData
       );
 
