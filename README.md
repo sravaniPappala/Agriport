@@ -1,6 +1,6 @@
 # Agriport 🚜
 
-Agripoort is a full-stack Agricultural Transport Management System that connects farmers with transport drivers for crop transportation.
+Agriport is a full-stack Agricultural Transport Management System that connects farmers with transport drivers for crop transportation.
 
 ## Features
 
